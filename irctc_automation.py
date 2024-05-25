@@ -11,8 +11,7 @@ Note: Please put the same station name as well as date mentioned in IRCTC.
 Basic Requirement Selenium module, and Web driver for chrome
 ============================================================================"""
 import time
-from tkinter import Tk, Label, Entry, Button, LEFT
-from selenium.webdriver.common.keys import Keys
+from tkinter import Tk, Label, Entry, Button
 from selenium import webdriver
 
 class BookingGui:
@@ -112,5 +111,4 @@ if __name__ == '__main__':
     ROOT = Tk()
     BOOKING = BookingGui(ROOT, FIELDS)
     BOOKING.main_gui()
-    BOOKING.pack(side=LEFT)
     ROOT.mainloop()
